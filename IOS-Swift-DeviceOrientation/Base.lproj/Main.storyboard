@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,132 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="IOS_Swift_DeviceOrientation" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is View?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z2H-z0-EsD">
+                                <rect key="frame" x="63" y="312.5" width="249" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="JhY-pw-dX5"/>
+                                    <constraint firstAttribute="width" constant="249" id="Nee-SZ-Yld"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flower" translatesAutoresizingMaskIntoConstraints="NO" id="9dr-gz-X9s">
+                                <rect key="frame" x="16" y="40.5" width="343" height="257"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="257" id="SOL-Vr-Izl"/>
+                                    <constraint firstAttribute="width" constant="343" id="fvp-3S-Li6"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O43-iU-hjK">
+                                <rect key="frame" x="19.5" y="362.5" width="336" height="264"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="336" id="beS-SZ-6V9"/>
+                                    <constraint firstAttribute="height" constant="264" id="kZq-Q2-OHj"/>
+                                </constraints>
+                                <string key="text">A view that displays one or more lines of read-only text, often used in conjunction with controls to describe their intended purpose.
+The appearance of labels is configurable, and they can display attributed strings, allowing you to customize the appearance of substrings within a label. You can add labels to your interface programmatically or by using Interface Builder.
+The following steps are required to add a label to your interface:
+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Z2H-z0-EsD" firstAttribute="top" secondItem="9dr-gz-X9s" secondAttribute="bottom" constant="15" id="4qa-mG-etD"/>
+                            <constraint firstItem="9dr-gz-X9s" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="T0X-C5-uBA"/>
+                            <constraint firstItem="O43-iU-hjK" firstAttribute="top" secondItem="Z2H-z0-EsD" secondAttribute="bottom" constant="8" id="WJ4-cR-C5Q"/>
+                            <constraint firstItem="Z2H-z0-EsD" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="dZK-rb-DNB"/>
+                            <constraint firstItem="O43-iU-hjK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uq3-Sg-Am7"/>
+                            <constraint firstItem="Z2H-z0-EsD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="y6t-hY-Ngy"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="labelViewP" destination="Z2H-z0-EsD" id="uy2-lx-xJZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-98.400000000000006" y="118.29085457271366"/>
+        </scene>
+        <!--Landscape View Controller-->
+        <scene sceneID="JKc-fz-Jxg">
+            <objects>
+                <viewController storyboardIdentifier="LandscapeView" id="ewp-Ks-aYh" customClass="LandscapeViewController" customModule="IOS_Swift_DeviceOrientation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="p62-9l-HvX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0xa-0f-T9P">
+                                <rect key="frame" x="180.5" y="206" width="14" height="255"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="255" id="ZgZ-ms-MrS"/>
+                                    <constraint firstAttribute="width" constant="14" id="pTd-ib-C35"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flower" translatesAutoresizingMaskIntoConstraints="NO" id="DIt-fm-lcn">
+                                <rect key="frame" x="-125.5" y="192" width="283" height="283"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="283" id="IEp-wl-aO2"/>
+                                    <constraint firstAttribute="height" constant="283" id="uZ8-R9-dKG"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is View?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nqc-wV-shZ">
+                                <rect key="frame" x="219.5" y="166" width="250" height="51"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51" id="HQR-NO-Gf5"/>
+                                    <constraint firstAttribute="width" constant="250" id="xdf-vm-k2t"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZVz-Lv-ZzU">
+                                <rect key="frame" x="219.5" y="225" width="282" height="267"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="267" id="5ui-Tb-oCG"/>
+                                    <constraint firstAttribute="width" constant="282" id="egK-w1-PFR"/>
+                                </constraints>
+                                <string key="text">A view that displays one or more lines of read-only text, often used in conjunction with controls to describe their intended purpose.
+The appearance of labels is configurable, and they can display attributed strings, allowing you to customize the appearance of substrings within a label. You can add labels to your interface programmatically or by using Interface Builder.
+The following steps are required to add a label to your interface:
+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="0xa-0f-T9P" firstAttribute="leading" secondItem="DIt-fm-lcn" secondAttribute="trailing" constant="23" id="8UP-Fl-jvJ"/>
+                            <constraint firstItem="0xa-0f-T9P" firstAttribute="top" secondItem="Nqc-wV-shZ" secondAttribute="bottom" constant="-11" id="Iwb-cp-H9B"/>
+                            <constraint firstItem="DIt-fm-lcn" firstAttribute="centerY" secondItem="p62-9l-HvX" secondAttribute="centerY" id="J1c-6X-yL6"/>
+                            <constraint firstItem="Nqc-wV-shZ" firstAttribute="leading" secondItem="0xa-0f-T9P" secondAttribute="trailing" constant="25" id="RiN-fe-WuY"/>
+                            <constraint firstItem="ZVz-Lv-ZzU" firstAttribute="leading" secondItem="0xa-0f-T9P" secondAttribute="trailing" constant="25" id="Sbj-TS-LdP"/>
+                            <constraint firstItem="0xa-0f-T9P" firstAttribute="centerY" secondItem="p62-9l-HvX" secondAttribute="centerY" id="YU1-dd-XeF"/>
+                            <constraint firstItem="0xa-0f-T9P" firstAttribute="centerX" secondItem="p62-9l-HvX" secondAttribute="centerX" id="cZD-bo-xof"/>
+                            <constraint firstItem="ZVz-Lv-ZzU" firstAttribute="top" secondItem="Nqc-wV-shZ" secondAttribute="bottom" constant="8" id="cfx-Rb-1vY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="qFm-Vt-JiB"/>
+                    </view>
+                    <connections>
+                        <outlet property="labelViewL" destination="Nqc-wV-shZ" id="d2k-GU-CcR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EOF-sS-ajT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="678.71064467766121" y="88.799999999999997"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="flower" width="3705" height="2470"/>
+    </resources>
 </document>

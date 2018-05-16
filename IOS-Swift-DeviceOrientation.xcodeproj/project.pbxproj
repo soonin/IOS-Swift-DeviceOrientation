@@ -12,6 +12,8 @@
 		FA4829C420AB873C00DFA578 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA4829C220AB873C00DFA578 /* Main.storyboard */; };
 		FA4829C620AB873E00DFA578 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA4829C520AB873E00DFA578 /* Assets.xcassets */; };
 		FA4829C920AB873E00DFA578 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA4829C720AB873E00DFA578 /* LaunchScreen.storyboard */; };
+		FA4829D120AB87F100DFA578 /* LandscapeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4829D020AB87F100DFA578 /* LandscapeViewController.swift */; };
+		FA4829D320AB891700DFA578 /* Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4829D220AB891700DFA578 /* Extentions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		FA4829C520AB873E00DFA578 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA4829C820AB873E00DFA578 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA4829CA20AB873E00DFA578 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA4829D020AB87F100DFA578 /* LandscapeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandscapeViewController.swift; sourceTree = "<group>"; };
+		FA4829D220AB891700DFA578 /* Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extentions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +59,9 @@
 			isa = PBXGroup;
 			children = (
 				FA4829BE20AB873C00DFA578 /* AppDelegate.swift */,
+				FA4829D220AB891700DFA578 /* Extentions.swift */,
 				FA4829C020AB873C00DFA578 /* ViewController.swift */,
+				FA4829D020AB87F100DFA578 /* LandscapeViewController.swift */,
 				FA4829C220AB873C00DFA578 /* Main.storyboard */,
 				FA4829C520AB873E00DFA578 /* Assets.xcassets */,
 				FA4829C720AB873E00DFA578 /* LaunchScreen.storyboard */,
@@ -136,7 +142,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA4829C120AB873C00DFA578 /* ViewController.swift in Sources */,
+				FA4829D120AB87F100DFA578 /* LandscapeViewController.swift in Sources */,
 				FA4829BF20AB873C00DFA578 /* AppDelegate.swift in Sources */,
+				FA4829D320AB891700DFA578 /* Extentions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
